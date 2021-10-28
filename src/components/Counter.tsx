@@ -1,4 +1,5 @@
 import React, { FunctionComponent, useState } from 'react';
+import Button from './Button';
 
 enum ClickAction {
   Decrement = 1,
@@ -19,8 +20,8 @@ const Counter: FunctionComponent = () => {
   return (
     <main>
       <p>{count}</p>
-      <button onClick={() => handleClick(ClickAction.Decrement)}>Remove</button>
-      <button onClick={() => handleClick(ClickAction.Increment)}>Add</button>
+      <Button onClick={() => handleClick(ClickAction.Decrement)}>Remove</Button>
+      <Button onClick={() => handleClick(ClickAction.Increment)}>Add</Button>
     </main>
   );
 };
