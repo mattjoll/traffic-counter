@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import Counter from './components/Counter';
 import './App.css';
 
-function App() {
-  return <div className="App">Hello world</div>;
-}
+const App: FunctionComponent = () => {
+  return (
+    <div className="App">
+      <h1>Traffic Counter</h1>
+      <Counter />
+    </div>
+  );
+};
 
 export default App;
