@@ -18,11 +18,15 @@ const Counter: FunctionComponent = () => {
   };
 
   return (
-    <main>
-      <p>{count}</p>
-      <Button onClick={() => handleClick(ClickAction.Decrement)}>Remove</Button>
-      <Button onClick={() => handleClick(ClickAction.Increment)}>Add</Button>
-    </main>
+    <section className="flex flex-col items-center">
+      <div className="font-medium m-8 text-9xl">{count}</div>
+      <div className="space-x-4">
+        <Button onClick={() => handleClick(ClickAction.Decrement)}>
+          Remove
+        </Button>
+        <Button onClick={() => handleClick(ClickAction.Increment)}>Add</Button>
+      </div>
+    </section>
   );
 };
 
