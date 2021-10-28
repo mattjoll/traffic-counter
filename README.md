@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Traffic counter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An app that allows users to count incoming and outgoing people traffic to a business.
+A user can add an event for a customer arriving and a customer leaving. This data point has an associated time. All data points can then be exported.
 
 ## Available Scripts
 
